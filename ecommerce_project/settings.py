@@ -29,9 +29,14 @@ ALLOWED_HOSTS = []
 
 import os
 
-SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "fallback_dev_secret")
+# Environment variables
+SECRET_KEY = os.getenv(7d4b9b5883ae764bea5f6f18e3f1d860", "fallback_dev_secret")
 DEBUG = False
 ALLOWED_HOSTS = ["your-render-url.onrender.com", "localhost"]
+
+# Add your environment variables for MongoDB and OpenAI
+OPENAI_KEY = os.getenv("dab82bcf11b83362167ef1634b859e6a")
+MONGO_URI = os.getenv("d5f00a3894197fed3ab7df49986a603c")
 
 # Application definition
 
