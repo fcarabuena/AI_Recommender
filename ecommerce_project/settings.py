@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+import os
+
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "fallback_dev_secret")
+DEBUG = False
+ALLOWED_HOSTS = ["your-render-url.onrender.com", "localhost"]
 
 # Application definition
 
